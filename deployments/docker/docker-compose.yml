@@ -86,13 +86,13 @@ services:
       - dsiem-log:/var/log/dsiem
 
   digital_twin:
-    build: ../../../build/digital_twin
+    build: ../../build/digital_twin
     container_name: digital_twin
     privileged: true
     network_mode: "host"
     volumes:
       - digital-twin-log:/logs
-      - ../../../src:.
+      - ../../src:.
     depends_on:
         - filebeat
 
