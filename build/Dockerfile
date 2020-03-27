@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-COPY ./src .
+# COPY ./src .
 COPY ./start.sh ./start.sh
 RUN apt-get update
 RUN apt-get install -y sudo \
@@ -13,7 +13,6 @@ RUN apt-get install -y sudo \
     && /mininet/util/install.sh \
     && pip install minicps \
     && apt-get install -y ettercap-common \
-    && python init.py \
     && chmod +x ./start.sh \
     && chmod +x ./attack.sh
 CMD ["./start.sh"]
