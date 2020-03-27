@@ -6,4 +6,4 @@ echo "HOST_IP=$ip" > .env
 
 docker-compose up -d
 
-/bin/bash ../../scripts/kbndashboard-import.sh localhost ../kibana/dashboard-siem.json
+/bin/bash kbndashboard-import.sh localhost ../kibana/dashboard-siem.json

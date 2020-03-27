@@ -13,7 +13,6 @@ RUN apt-get install -y sudo \
     && /mininet/util/install.sh \
     && pip install minicps \
     && apt-get install -y ettercap-common \
-    && chmod +x ./start.sh \
-    && chmod +x ./attack.sh
+    && chmod +x ./start.sh
 CMD ["./start.sh"]
 

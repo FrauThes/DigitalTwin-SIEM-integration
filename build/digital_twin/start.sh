@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd src
 service openvswitch-switch start
 mn -c
 python init.py

@@ -91,8 +91,8 @@ services:
     privileged: true
     network_mode: "host"
     volumes:
-      - digital-twin-log:/logs
-      - ../../src:.
+      - digital-twin-log:/src/logs
+      - ../../src:/src
     depends_on:
         - filebeat
 
