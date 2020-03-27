@@ -9,10 +9,14 @@ Run this script just once to create and init the sqlite table.
 from minicps.states import SQLiteState
 from utils import PATH, SCHEMA, SCHEMA_INIT
 from sqlite3 import OperationalError
+import os
 
 
-if __name__ == "__main__":
-
+if __name__ == "__main__": 
+    try: 
+        os.remove(PATH)
+    except OSError:
+        print "{} does not exist.".format(PATH)
     try:
         SQLiteState._create(PATH, SCHEMA)
         SQLiteState._init(PATH, SCHEMA_INIT)
