@@ -5,7 +5,7 @@ in current enterprise security operations and systems like Security Information 
 
 This prototype relies on a microservice architecture composed with **Docker**. 
 
-![microservice architecture](./misc/Micro-service_architecture.PNG "microservice architecture")
+![microservice architecture](./misc/micro-service_architecture.PNG "microservice architecture")
 
 The **DigitalTwin-SIEM-integration** prototype allows to:
  - build and run a simulation of a filling plant and start an MITM attack (**DigitalTwin** simulation)
