@@ -5,7 +5,7 @@ in current enterprise security operations and systems like Security Information 
 
 This prototype relies on a microservice architecture composed with **Docker**. 
 
-![microservice architecture](./misc/Micro-service_architecture.pdf "microservice architecture")
+![microservice architecture](./misc/Micro-service_architecture.PNG "microservice architecture")
 
 The **DigitalTwin-SIEM-integration** prototype allows to:
  - build and run a simulation of a filling plant and start an MITM attack (**DigitalTwin** simulation)
@@ -16,7 +16,7 @@ The **DigitalTwin-SIEM-integration** prototype allows to:
 
 ## Installation
 
-To run the digital twin simulation of the filling plant alone follow the instructions given in the [readme of the src folder](src/README.md) or the **Installation of the DigitalTwin** section below.
+To run the digital twin simulation of the filling plant alone follow the instructions given in the **Installation of the DigitalTwin** section below.
 The complete integration of the SIEM and digital twin simulation can be deployed by following the description of the **Docker** section.                                                                                         
 
 
@@ -50,8 +50,9 @@ Docker Compose is the most convenient way to setup the project:
 The Project is up and running. If you want to start it a second time you simply have to navigate to deployments/docker and run `docker-compose up`.
 
 ### Installation of the DigitalTwin 
-
-TODO
+ The description of the **DigitalTwin** simulation and its sole installation can be found 
+ in the [readme of the src folder](src/README.md).
+ 
 
 
 ## Usage
