@@ -1,14 +1,25 @@
 # DigitalTwin-SIEM-integration
 
-TODO
+The **DigitalTwin-SIEM-integration** prototype orginates from a research approach to integrate digital twin simulations 
+in current enterprise security operations and systems like Security Information and Event Management (SIEM) tools. 
+
+This prototype relies on a microservice architecture composed with **Docker**. 
+
+![microservice architecture](./misc/Micro-service_architecture.pdf "microservice architecture")
+
+The **DigitalTwin-SIEM-integration** prototype allows to:
+ - build and run a simulation of a filling plant and start an MITM attack (**DigitalTwin** simulation)
+ - create and store system logs of the filling plant's PLCs 
+ - integrate the system logs into a fully-fledged **SIEM** tool that
+ - detects the attack based on implemented rules
+
 
 ## Installation
 
-TODO
+To run the digital twin simulation of the filling plant alone follow the instructions given in the [readme of the src folder](src/README.md) or the **Installation of the DigitalTwin** section below.
+The complete integration of the SIEM and digital twin simulation can be deployed by following the description of the **Docker** section.                                                                                         
 
-```bash
-pip install todo
-```
+
 ### Docker
 Docker Compose is the most convenient way to setup the project:
 1. Install Docker Compose as explained here: https://docs.docker.com/compose/install/
@@ -37,6 +48,14 @@ Docker Compose is the most convenient way to setup the project:
     replace **192.168.2.120** with the IP you have set previously.
 
 The Project is up and running. If you want to start it a second time you simply have to navigate to deployments/docker and run `docker-compose up`.
-## Usage
+
+### Installation of the DigitalTwin 
 
 TODO
+
+
+## Usage
+ TODO
+
+## Research and Citation
+Please consider citing this GitHub repository if you are using our **DigitalTwin-SIEM-integration** or the **DigitalTwin** simulation of the filling plant.
