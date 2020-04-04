@@ -6,7 +6,7 @@ in current enterprise security operations and systems like Security Information 
 This prototype relies on a microservice architecture composed with **Docker**. The tools used for the **DigitalTwin** part
 are [Mininet](http://mininet.org)-based [MiniCPS](https://github.com/scy-phy/minicps) and [Ettercap](https://www.ettercap-project.org/). 
 Filebeat is used to gather the log data from the logs folder.
-The **SIEM** part is realized with [Dsiem]((https://www.dsiem.org/)), on top of [Filebeat,Elasticsearch, Logstash and Kibana](https://www.elastic.co/).
+The **SIEM** part is realized with [Dsiem](https://www.dsiem.org/), on top of [Filebeat, Elasticsearch, Logstash and Kibana](https://www.elastic.co/).
 
 ![microservice architecture](./misc/micro-service_architecture.PNG "microservice architecture")
 

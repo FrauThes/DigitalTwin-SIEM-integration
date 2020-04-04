@@ -55,9 +55,7 @@ sudo apt-get install ettercap-graphical
 ```
 
 ### Initiate the DigitalTwin
-```bash
-python init.py
-```
+Execute the following commands in the *src*-folder of this project.
 To initiate state and topology of the filling-plant simulation run the following commands.
 To create the SQLLite-Table that simulates the physical state (*Sensor1*,*Sensor2*,*Sensor3* and *Actuator1*):
 ```bash
@@ -129,7 +127,7 @@ spoofing attack between *PLC1* (target1) and *PLC3* (target2).
 ![attack-example](../misc/attack.JPG "attack-example")
 
 ### System logs
-The system logs in the *logs*-folder indicate whether the PLCs can communicate without problems (e.g. example of *plc1.log*): 
+The system logs in the *logs*-folder indicate whether the PLCs can communicate without problems (see extract of *plc1.log*): 
 ```bash
 INFO 03/16/2020 13:30:26 10.0.0.1 main_loop Liquid level (SENSOR 3) under BOTTLE_M['UpperBound']: 0.88 < 0.90 -> open mv (ACTUATOR 1).
 INFO 03/16/2020 13:30:28 10.0.0.1 main_loop Flow level (SENSOR 2) under SENSOR2_THRESH:  2.45 < 3.00 -> leave mv status (ACTUATOR 1).
@@ -138,7 +136,7 @@ INFO 03/16/2020 13:30:29 10.0.0.1 main_loop Liquid level (SENSOR 3) over BOTTLE_
 
 Whenever an network problem is present (e.g. caused by an attacker as shown above) it produces warnings.
 The following warning shows that *PLC1* is not able to receive the Sensor3-data from *PLC3*, but 
-still receives the Sensor2-data from *PLC2*:
+still receives the Sensor2-data from *PLC2* (see extract of *plc1.log*):
 ```bash
 INFO 03/16/2020 13:34:40 10.0.0.1 main_loop Flow level (SENSOR 2) under SENSOR2_THRESH:  0.00 < 3.00 -> leave mv status (ACTUATOR 1).
 WARNING 03/16/2020 13:34:45 10.0.0.1 main_loop Liquid level (SENSOR 3) is not received. Program is unable to proceed properly
