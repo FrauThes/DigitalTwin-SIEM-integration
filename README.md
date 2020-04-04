@@ -3,7 +3,10 @@
 The **DigitalTwin-SIEM-integration** prototype orginates from a research approach to integrate digital twin simulations 
 in current enterprise security operations and systems like Security Information and Event Management (SIEM) tools. 
 
-This prototype relies on a microservice architecture composed with **Docker**. 
+This prototype relies on a microservice architecture composed with **Docker**. The tools used for the **DigitalTwin** part
+are [Mininet](http://mininet.org)-based [MiniCPS](https://github.com/scy-phy/minicps) and [Ettercap](https://www.ettercap-project.org/). 
+Filebeat is used to gather the log data from the logs folder.
+The **SIEM** part is realized with [Dsiem]((https://www.dsiem.org/)), on top of [Filebeat,Elasticsearch, Logstash and Kibana](https://www.elastic.co/).
 
 ![microservice architecture](./misc/micro-service_architecture.PNG "microservice architecture")
 
@@ -15,12 +18,10 @@ The **DigitalTwin-SIEM-integration** prototype allows to:
 
 
 ## Installation
-
-To run the digital twin simulation of the filling plant alone follow the instructions given in the **Installation of the DigitalTwin** section below.
 The complete integration of the SIEM and digital twin simulation can be deployed by following the description of the **Docker** section.                                                                                         
+To run the digital twin simulation of the filling plant alone follow the instructions given in the **Installation of the DigitalTwin** section below.
 
-
-### Docker
+### Complete Installation of the Setup with Docker
 Docker Compose is the most convenient way to setup the project:
 1. Install Docker Compose as explained here: https://docs.docker.com/compose/install/
 2. Download and unzip or clone the project:
@@ -49,14 +50,11 @@ Docker Compose is the most convenient way to setup the project:
 
 The Project is up and running. If you want to start it a second time you simply have to navigate to deployments/docker and run `docker-compose up`.
 
-### Installation of the DigitalTwin 
- The description of the **DigitalTwin** simulation and its sole installation can be found 
+### Exclusive Installation of the DigitalTwin 
+ The description of the **DigitalTwin** simulation and its exclusive installation can be found 
  in the [readme of the src folder](src/README.md).
- 
 
 
-## Usage
- TODO
 
 ## Research and Citation
 Please consider citing this GitHub repository if you are using our **DigitalTwin-SIEM-integration** or the **DigitalTwin** simulation of the filling plant.
