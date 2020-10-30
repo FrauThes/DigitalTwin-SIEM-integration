@@ -57,4 +57,4 @@ The Project is up and running. If you want to start it a second time you simply 
 
 
 ## Research and Citation
-Please consider citing this GitHub repository if you are using our **DigitalTwin-SIEM-integration** or the **DigitalTwin** simulation of the filling plant.
+Please consider citing our [ARES'20](https://doi.org/10.1145/3407023.3407039) publication when using **DigitalTwin-SIEM-integration** or the **DigitalTwin** simulation of the filling plant for your research.
