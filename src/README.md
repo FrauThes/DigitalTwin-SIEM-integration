@@ -143,4 +143,4 @@ WARNING 03/16/2020 13:34:45 10.0.0.1 main_loop Liquid level (SENSOR 3) is not re
 ```
 
 ## Research and Citation
-Please consider citing this GitHub repository if you are using our  **DigitalTwin** simulation of the filling plant.
+Please consider citing our [ARES'20](https://doi.org/10.1145/3407023.3407039) publication if you are using our  **DigitalTwin** simulation of the filling plant for your research.
